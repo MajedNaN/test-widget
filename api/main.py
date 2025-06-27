@@ -20,7 +20,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True, # مهم إذا كنت سترسل ملفات تعريف الارتباط أو هيدر التخويل (مثل API Key)
     allow_methods=["*"], # اسمح بجميع أساليب HTTP (POST, GET, إلخ)
     allow_headers=["*"], # اسمح بجميع الرؤوس في الطلب
